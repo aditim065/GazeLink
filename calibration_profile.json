@@ -1,0 +1,314 @@
+{
+  "version": 2,
+  "screen_width": 1536,
+  "screen_height": 864,
+  "feature_names": [
+    "left_horizontal",
+    "right_horizontal",
+    "left_vertical",
+    "right_vertical",
+    "average_horizontal",
+    "average_vertical",
+    "face_center_x",
+    "face_center_y",
+    "normalized_eye_distance"
+  ],
+  "polynomial_terms": [
+    "1",
+    "left_horizontal",
+    "right_horizontal",
+    "left_vertical",
+    "right_vertical",
+    "average_horizontal",
+    "average_vertical",
+    "face_center_x",
+    "face_center_y",
+    "normalized_eye_distance",
+    "average_horizontal^2",
+    "average_vertical^2",
+    "average_horizontal*average_vertical",
+    "left_horizontal*right_horizontal",
+    "left_vertical*right_vertical",
+    "average_horizontal*face_center_x",
+    "average_vertical*face_center_y"
+  ],
+  "coefficients_x": [
+    0.5022260745487633,
+    -0.03681290045985014,
+    -0.12226765701206281,
+    0.0018904155754276657,
+    0.0013109887004424006,
+    -0.08360633127143437,
+    0.001645883968949675,
+    -0.05090434309598918,
+    0.0014622540970077804,
+    -0.031099998939207587,
+    -0.04221855702396002,
+    0.028966481738639867,
+    0.0017027311563727315,
+    0.03316696225460512,
+    -0.03270504595390004,
+    -0.018101081631470464,
+    -0.004309021448252597
+  ],
+  "coefficients_y": [
+    0.35618583216051025,
+    0.4076260010003769,
+    -0.23772089898187115,
+    0.041977242881487346,
+    0.07840484985538872,
+    0.060382537002109736,
+    0.06364626372698902,
+    -0.019325526644663728,
+    0.030914208975157138,
+    -0.1469919179832372,
+    -1.2704055651217465,
+    0.11443970799542137,
+    -0.005677312009542542,
+    1.5441970577617432,
+    -0.0924627475539429,
+    -0.1605507390393736,
+    0.03413514969482694
+  ],
+  "feature_mean": [
+    0.48485462083910685,
+    0.5386016570523372,
+    0.5735970860848707,
+    0.5504640640098125,
+    0.5116633629393419,
+    0.5642521331133041,
+    0.49280960857868195,
+    0.5121721625328064,
+    0.17292225294933783
+  ],
+  "feature_scale": [
+    0.03376232034749731,
+    0.03945934063103449,
+    0.021945942969641353,
+    0.024651533481336012,
+    0.03628606809352523,
+    0.022421033004651654,
+    0.004724004178639651,
+    0.0017301883336527995,
+    0.0013025615560678671
+  ],
+  "feature_min": [
+    0.4213594585435545,
+    0.47687727851740613,
+    0.5221833961978529,
+    0.4904432401519054,
+    0.45511969232816873,
+    0.507401259677609,
+    0.48350146412849426,
+    0.5084618031978607,
+    0.16969901820893887
+  ],
+  "feature_max": [
+    0.5319691310864015,
+    0.5999705922875379,
+    0.6237467652208948,
+    0.6070975332214701,
+    0.561667406668843,
+    0.6154221492211824,
+    0.502620667219162,
+    0.5160660147666931,
+    0.17479630926056672
+  ],
+  "face_reference": {
+    "face_center_x": 0.49280960857868195,
+    "face_center_y": 0.5121721625328064,
+    "eye_distance": 0.17292225294933783
+  },
+  "correction_points": [
+    {
+      "x": 0.16295832807727023,
+      "y": 0.641459969689918,
+      "dx": 0.016846232183316077,
+      "dy": -0.1420393439657002,
+      "name": "verify_left"
+    },
+    {
+      "x": 0.49303207529345755,
+      "y": 0.5031306250201583,
+      "dx": 0.006642191807519629,
+      "dy": -0.0037099992959404413,
+      "name": "verify_center"
+    },
+    {
+      "x": 0.8517643175225158,
+      "y": 0.5342996841557257,
+      "dx": -0.03222034358114777,
+      "dy": -0.03487905843150785,
+      "name": "verify_right"
+    },
+    {
+      "x": 0.5061679660297674,
+      "y": 0.35257925973115994,
+      "dx": -0.006493698928790248,
+      "dy": -0.13357578348550525,
+      "name": "verify_top"
+    },
+    {
+      "x": 0.5106244607048008,
+      "y": 0.4625956360832274,
+      "dx": -0.010950193603823686,
+      "dy": 0.31724213911955357,
+      "name": "verify_bottom"
+    }
+  ],
+  "quality_metrics": {
+    "mean_error": 116.7727722330889,
+    "median_error": 115.70605419614881,
+    "max_error": 274.29545580318234,
+    "mean_horizontal_error": 22.457866652111402,
+    "mean_vertical_error": 108.98763557387058,
+    "point_errors": {
+      "verify_left": 125.27781618208773,
+      "verify_center": 10.68665912729069,
+      "verify_right": 57.89787585673498,
+      "verify_top": 115.70605419614881,
+      "verify_bottom": 274.29545580318234
+    },
+    "left_mean_error": 125.27781618208773,
+    "center_mean_error": 10.68665912729069,
+    "right_mean_error": 57.89787585673498,
+    "top_mean_error": 115.70605419614881,
+    "middle_mean_error": null,
+    "bottom_mean_error": 274.29545580318234
+  },
+  "verification_metrics": {
+    "mean_error": 116.7727722330889,
+    "median_error": 115.70605419614881,
+    "max_error": 274.29545580318234,
+    "mean_horizontal_error": 22.457866652111402,
+    "mean_vertical_error": 108.98763557387058,
+    "point_errors": {
+      "verify_left": 125.27781618208773,
+      "verify_center": 10.68665912729069,
+      "verify_right": 57.89787585673498,
+      "verify_top": 115.70605419614881,
+      "verify_bottom": 274.29545580318234
+    },
+    "left_mean_error": 125.27781618208773,
+    "center_mean_error": 10.68665912729069,
+    "right_mean_error": 57.89787585673498,
+    "top_mean_error": 115.70605419614881,
+    "middle_mean_error": null,
+    "bottom_mean_error": 274.29545580318234
+  },
+  "verification_results": [
+    {
+      "name": "verify_left",
+      "actual_x": 276.0,
+      "actual_y": 431.0,
+      "predicted_x": 250.14103359860982,
+      "predicted_y": 553.5799538423993,
+      "error_x": 25.858966401390177,
+      "error_y": -122.57995384239928,
+      "error": 125.27781618208773,
+      "spread": 44.2673426972372,
+      "valid_frames": 18,
+      "expected_frames": 18
+    },
+    {
+      "name": "verify_center",
+      "actual_x": 767.0,
+      "actual_y": 431.0,
+      "predicted_x": 756.8042355754574,
+      "predicted_y": 434.2017293923966,
+      "error_x": 10.19576442454263,
+      "error_y": -3.201729392396601,
+      "error": 10.68665912729069,
+      "spread": 41.40923678136432,
+      "valid_frames": 18,
+      "expected_frames": 18
+    },
+    {
+      "name": "verify_right",
+      "actual_x": 1258.0,
+      "actual_y": 431.0,
+      "predicted_x": 1307.4582273970618,
+      "predicted_y": 461.10062742639127,
+      "error_x": -49.45822739706182,
+      "error_y": -30.10062742639127,
+      "error": 57.89787585673498,
+      "spread": 40.97080243835575,
+      "valid_frames": 18,
+      "expected_frames": 18
+    },
+    {
+      "name": "verify_top",
+      "actual_x": 767.0,
+      "actual_y": 189.0,
+      "predicted_x": 776.967827855693,
+      "predicted_y": 304.275901147991,
+      "error_x": -9.96782785569303,
+      "error_y": -115.27590114799102,
+      "error": 115.70605419614881,
+      "spread": 39.24607176704531,
+      "valid_frames": 18,
+      "expected_frames": 18
+    },
+    {
+      "name": "verify_bottom",
+      "actual_x": 767.0,
+      "actual_y": 673.0,
+      "predicted_x": 783.8085471818694,
+      "predicted_y": 399.22003393982527,
+      "error_x": -16.808547181869358,
+      "error_y": 273.77996606017473,
+      "error": 274.29545580318234,
+      "spread": 42.955918483328745,
+      "valid_frames": 18,
+      "expected_frames": 18
+    }
+  ],
+  "readiness_metrics": {
+    "valid": true,
+    "score": 65,
+    "level": "EMERGENCY READY",
+    "accuracy_score": 65.18,
+    "stability_score": 91.18,
+    "coverage_score": 25.48,
+    "tracking_score": 100.0,
+    "emergency_readiness": 64,
+    "typing_readiness": 69,
+    "emergency_ready": true,
+    "typing_ready": false,
+    "region_scores": {
+      "left": 72.8,
+      "center": 100.0,
+      "right": 100.0,
+      "top": 76.79,
+      "bottom": 2.85
+    },
+    "region_labels": {
+      "left": "MODERATE",
+      "center": "GOOD",
+      "right": "GOOD",
+      "top": "MODERATE",
+      "bottom": "WEAK"
+    },
+    "region_errors": {
+      "left": 125.28,
+      "center": 10.69,
+      "right": 57.9,
+      "top": 115.71,
+      "bottom": 274.3
+    },
+    "weakest_region": "bottom",
+    "catastrophic_regions": [],
+    "median_error": 115.71,
+    "max_error": 274.3,
+    "median_spread": 41.41,
+    "valid_frame_ratio": 1.0
+  },
+  "legacy_values": {
+    "left": 0.5541844869422675,
+    "center_h": 0.5162398359341005,
+    "right": 0.4666065227584709,
+    "top": 0.5525932106439306,
+    "center_v": 0.57663021311736,
+    "bottom": 0.6034682735007593
+  }
+}

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+build/
+dist/
+GazeLink-Distribution/
+GazeLink-ZIP-Test/
+GazeLink-Windows-v1.0.zip
+*.spec
+logs/
